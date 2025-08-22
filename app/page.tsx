@@ -121,7 +121,7 @@ export default function Page() {
         <LeadFormModal
           open={openForm}
           onOpenChange={setOpenForm}
-          baseUrl="https://mooneymaker.co/home?ref=64349"
+          baseUrl={process.env.NEXT_PUBLIC_BASE_URL}
         />
       </main>
     );
@@ -184,7 +184,7 @@ export default function Page() {
       <LeadFormModal
         open={openForm}
         onOpenChange={setOpenForm}
-        baseUrl="https://mooneymaker.co/home?ref=64349"
+        baseUrl={process.env.NEXT_PUBLIC_BASE_URL}
       />
 
       {/* Estilo para giro lento (solo si usas animate-spin-slow) */}
